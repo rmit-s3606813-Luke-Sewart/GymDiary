@@ -13,6 +13,8 @@
 		750172F51F4286EE00023862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750172F31F4286EE00023862 /* Main.storyboard */; };
 		750172F71F4286EE00023862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750172F61F4286EE00023862 /* Assets.xcassets */; };
 		750172FA1F4286EE00023862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750172F81F4286EE00023862 /* LaunchScreen.storyboard */; };
+		B78CEE691F48D11C00D311B4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CEE681F48D11C00D311B4 /* ThirdViewController.swift */; };
+		B78CEE6B1F48D19C00D311B4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CEE6A1F48D19C00D311B4 /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		750172F61F4286EE00023862 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750172F91F4286EE00023862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750172FB1F4286EE00023862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B78CEE681F48D11C00D311B4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		B78CEE6A1F48D19C00D311B4 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				750172F61F4286EE00023862 /* Assets.xcassets */,
 				750172F81F4286EE00023862 /* LaunchScreen.storyboard */,
 				750172FB1F4286EE00023862 /* Info.plist */,
+				B78CEE681F48D11C00D311B4 /* ThirdViewController.swift */,
+				B78CEE6A1F48D19C00D311B4 /* FourthViewController.swift */,
 			);
 			path = GymDiary;
 			sourceTree = "<group>";
@@ -141,7 +147,9 @@
 			files = (
 				750172F21F4286EE00023862 /* SecondViewController.swift in Sources */,
 				750172EE1F4286EE00023862 /* AppDelegate.swift in Sources */,
+				B78CEE691F48D11C00D311B4 /* ThirdViewController.swift in Sources */,
 				750172F01F4286EE00023862 /* FirstViewController.swift in Sources */,
+				B78CEE6B1F48D19C00D311B4 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +311,7 @@
 				750173001F4286EE00023862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
