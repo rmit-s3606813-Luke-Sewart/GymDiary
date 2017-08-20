@@ -12,11 +12,14 @@ class FirstViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var tablecell: UITableViewCell!
+    @IBOutlet weak var plusButton: UIButton!
     
-    var data:[String] = ["Row 1", "Row 2", "Row 3"]
+    var data:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Today"
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addExercise))
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -35,5 +38,11 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    func addExercise(){
+        let name:String = "Row\(data.count + 1)"
+        data.insert(name, at:0)
+        let indexPath:IndexPath = IndexPath(row: 0, section: 0)
+        table.insertRows(at: [indexPath], with: .automatic )
+    }
 }
 
