@@ -12,14 +12,16 @@ class FirstViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var tablecell: UITableViewCell!
-    @IBOutlet weak var plusButton: UIButton!
+    
+    @IBAction func AddButtonTapped(_ sender: Any) {
+        addExercise()
+    }
     
     var data:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Today"
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addExercise))
         // Do any additional setup after loading the view, typically from a nib.
     }
 
