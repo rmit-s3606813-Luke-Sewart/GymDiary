@@ -20,6 +20,9 @@ class ThirdViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    func returnNumber()->Int {
+        return 5;
+    }
+
 }
 
