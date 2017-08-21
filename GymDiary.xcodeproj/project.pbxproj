@@ -15,6 +15,10 @@
 		750172FA1F4286EE00023862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750172F81F4286EE00023862 /* LaunchScreen.storyboard */; };
 		B78CEE691F48D11C00D311B4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CEE681F48D11C00D311B4 /* ThirdViewController.swift */; };
 		B78CEE6B1F48D19C00D311B4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CEE6A1F48D19C00D311B4 /* FourthViewController.swift */; };
+		B7DAE4141F4AFE7700F4BE84 /* cardioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAE4121F4AFE7700F4BE84 /* cardioCell.swift */; };
+		B7DAE4151F4AFE7700F4BE84 /* cardioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DAE4131F4AFE7700F4BE84 /* cardioCell.xib */; };
+		B7DAE4181F4AFE8600F4BE84 /* weightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAE4161F4AFE8600F4BE84 /* weightCell.swift */; };
+		B7DAE4191F4AFE8600F4BE84 /* weightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DAE4171F4AFE8600F4BE84 /* weightCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		750172FB1F4286EE00023862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B78CEE681F48D11C00D311B4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		B78CEE6A1F48D19C00D311B4 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		B7DAE4121F4AFE7700F4BE84 /* cardioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardioCell.swift; sourceTree = "<group>"; };
+		B7DAE4131F4AFE7700F4BE84 /* cardioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cardioCell.xib; sourceTree = "<group>"; };
+		B7DAE4161F4AFE8600F4BE84 /* weightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weightCell.swift; sourceTree = "<group>"; };
+		B7DAE4171F4AFE8600F4BE84 /* weightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = weightCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 			children = (
 				750172ED1F4286EE00023862 /* AppDelegate.swift */,
 				750172EF1F4286EE00023862 /* FirstViewController.swift */,
+				B7B91FFF1F4AF97500195663 /* Table Cells */,
 				750172F11F4286EE00023862 /* SecondViewController.swift */,
 				750172F31F4286EE00023862 /* Main.storyboard */,
 				750172F61F4286EE00023862 /* Assets.xcassets */,
@@ -71,6 +80,17 @@
 				B78CEE6A1F48D19C00D311B4 /* FourthViewController.swift */,
 			);
 			path = GymDiary;
+			sourceTree = "<group>";
+		};
+		B7B91FFF1F4AF97500195663 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B7DAE4121F4AFE7700F4BE84 /* cardioCell.swift */,
+				B7DAE4131F4AFE7700F4BE84 /* cardioCell.xib */,
+				B7DAE4161F4AFE8600F4BE84 /* weightCell.swift */,
+				B7DAE4171F4AFE8600F4BE84 /* weightCell.xib */,
+			);
+			name = "Table Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				750172FA1F4286EE00023862 /* LaunchScreen.storyboard in Resources */,
+				B7DAE4191F4AFE8600F4BE84 /* weightCell.xib in Resources */,
+				B7DAE4151F4AFE7700F4BE84 /* cardioCell.xib in Resources */,
 				750172F71F4286EE00023862 /* Assets.xcassets in Resources */,
 				750172F51F4286EE00023862 /* Main.storyboard in Resources */,
 			);
@@ -146,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				750172F21F4286EE00023862 /* SecondViewController.swift in Sources */,
+				B7DAE4181F4AFE8600F4BE84 /* weightCell.swift in Sources */,
+				B7DAE4141F4AFE7700F4BE84 /* cardioCell.swift in Sources */,
 				750172EE1F4286EE00023862 /* AppDelegate.swift in Sources */,
 				B78CEE691F48D11C00D311B4 /* ThirdViewController.swift in Sources */,
 				750172F01F4286EE00023862 /* FirstViewController.swift in Sources */,

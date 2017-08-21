@@ -8,20 +8,49 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDataSource {
+class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+   
+    @IBOutlet weak var cardioButton: UIButton!
+    @IBOutlet weak var weightButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var table: UITableView!
-    @IBOutlet weak var tablecell: UITableViewCell!
-    
     @IBAction func AddButtonTapped(_ sender: Any) {
+        self.addButton.isHidden = true
+        self.cardioButton.isHidden = false
+        self.weightButton.isHidden = false
+    }
+    @IBAction func weightButtonTapped(_ sender: Any) {
+        data.insert("weightCell", at: 0)
+        self.weightButton.isHidden = true
+        self.cardioButton.isHidden = true
+        self.addButton.isHidden = false
         addExercise()
+        
     }
     
+    @IBAction func cardioButtonTapped(_ sender: Any) {
+        data.insert("cardioCell", at: 0)
+        self.weightButton.isHidden = true
+        self.cardioButton.isHidden = true
+        self.addButton.isHidden = false
+        addExercise()
+        
+    }
     var data:[String] = []
-    
+    var cardioCells = [cardioCell()]
+    var weightCells = [weightCell()]
+    var cardioCount = 0
+    var weightCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Today"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = DateFormatter.Style.short
+        dateFormatter.timeStyle = DateFormatter.Style.short
+        let currentDateAndTime = dateFormatter.string(from: NSDate() as Date)
+        self.title = currentDateAndTime
+        self.cardioButton.isHidden = true
+        self.weightButton.isHidden = true
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -31,20 +60,66 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+      return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "tablecell")!
-        cell.textLabel?.text = data[indexPath.row]
+        if data[indexPath.row] == "cardioCell"
+        {
+            let cell = Bundle.main.loadNibNamed("cardioCell", owner:self,
+                        options:  nil)?.first as! cardioCell
+            cell.TimeInput = cardioCells[cardioCount].TimeInput
+            cell.DistanceInput = cardioCells[cardioCount].DistanceInput
+            cell.difficultySlider = cardioCells[cardioCount].difficultySlider
+            return cell
+
+        }
+        else if data[indexPath.row] == "weightCell"
+        {
+            let cell = Bundle.main.loadNibNamed("weightCell", owner:self,
+                                                options:  nil)?.first as! weightCell
+            cell.exerciseInput = weightCells[weightCount].exerciseInput
+            cell.weightInput = weightCells[weightCount].weightInput
+            cell.difficultySlider = weightCells[weightCount].difficultySlider
+            cell.setsInput = weightCells[weightCount].setsInput
+            cell.repsInput = weightCells[weightCount].repsInput
+            return cell
+
+
+        }
+        else
+        {
+        let cell = Bundle.main.loadNibNamed("cardioCell", owner:self,
+                                            options:  nil)?.first as! cardioCell
+        cell.TimeInput = cardioCells[cardioCount].TimeInput
+        cell.DistanceInput = cardioCells[cardioCount].DistanceInput
+        cell.difficultySlider = cardioCells[cardioCount].difficultySlider
         return cell
+        }
     }
-    
     func addExercise(){
-        let name:String = "Row\(data.count + 1)"
-        data.insert(name, at:0)
         let indexPath:IndexPath = IndexPath(row: 0, section: 0)
         table.insertRows(at: [indexPath], with: .automatic )
     }
-}
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if data[indexPath.row] == "cardioCell"
+        {
+            return 110
+            
+        }
+        else if data[indexPath.row] == "weightCell"
+        {
+           
+            return 130
+            
+        }
+        else
+        {
+            return 130
+        }
 
+    }
+    
+    
+}
