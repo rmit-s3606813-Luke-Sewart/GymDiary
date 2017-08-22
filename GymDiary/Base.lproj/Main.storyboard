@@ -6,9 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLP-mX-a6A">
-                                <rect key="frame" x="215" y="549" width="71" height="72"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLP-mX-a6A">
+                                <rect key="frame" x="204" y="551" width="71" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="71" id="Ut8-aw-1Cw"/>
                                 </constraints>
@@ -34,19 +31,9 @@
                                     <action selector="weightButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="YUY-n9-DJg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vau-B2-5Ua">
-                                <rect key="frame" x="303" y="549" width="56" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="Olr-bz-1T9"/>
-                                    <constraint firstAttribute="width" constant="56" id="UTA-GB-ViM"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="plus-2"/>
-                                <connections>
-                                    <action selector="AddButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="veQ-hh-3Nq"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="daQ-kk-PgW">
-                                <rect key="frame" x="0.0" y="64" width="375" height="482"/>
+                            <tableView clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="daQ-kk-PgW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="479"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -57,31 +44,27 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="Rkp-JJ-gTH"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpO-0M-0fT">
-                                <rect key="frame" x="93" y="549" width="72" height="72"/>
-                                <state key="normal" title="cardioCell" image="weightlifter-silhouette"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpO-0M-0fT">
+                                <rect key="frame" x="79" y="555" width="85" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="weightlifter-silhouette"/>
                                 <connections>
                                     <action selector="cardioButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="HbL-ac-jiC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vau-B2-5Ua">
+                                <rect key="frame" x="303" y="551" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Olr-bz-1T9"/>
+                                    <constraint firstAttribute="width" constant="56" id="UTA-GB-ViM"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="plus-2"/>
+                                <connections>
+                                    <action selector="AddButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="veQ-hh-3Nq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="daQ-kk-PgW" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="9q2-Ib-dvQ"/>
-                            <constraint firstItem="FpO-0M-0fT" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="77" id="Cz2-ZO-Ymf"/>
-                            <constraint firstItem="FpO-0M-0fT" firstAttribute="baseline" secondItem="GLP-mX-a6A" secondAttribute="firstBaseline" id="FZ3-dE-odc"/>
-                            <constraint firstItem="Vau-B2-5Ua" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="IV0-Lm-wJP"/>
-                            <constraint firstItem="FpO-0M-0fT" firstAttribute="top" secondItem="GLP-mX-a6A" secondAttribute="top" id="R0X-sV-Qo5"/>
-                            <constraint firstItem="GLP-mX-a6A" firstAttribute="top" secondItem="Vau-B2-5Ua" secondAttribute="top" id="SqP-xl-tLn"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Vau-B2-5Ua" secondAttribute="bottom" constant="18" id="VPp-DD-aQf"/>
-                            <constraint firstItem="GLP-mX-a6A" firstAttribute="baseline" secondItem="FpO-0M-0fT" secondAttribute="firstBaseline" id="Wmd-Av-YFM"/>
-                            <constraint firstAttribute="trailing" secondItem="daQ-kk-PgW" secondAttribute="trailing" id="eGa-x3-vg8"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="FpO-0M-0fT" secondAttribute="bottom" constant="2" id="ivF-3b-ekj"/>
-                            <constraint firstItem="FpO-0M-0fT" firstAttribute="top" secondItem="daQ-kk-PgW" secondAttribute="bottom" constant="3" id="ngY-1w-dDk"/>
-                            <constraint firstItem="daQ-kk-PgW" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="plx-5p-sJE"/>
-                            <constraint firstItem="Vau-B2-5Ua" firstAttribute="leading" secondItem="GLP-mX-a6A" secondAttribute="trailing" constant="17" id="s9T-M7-53c"/>
-                            <constraint firstItem="GLP-mX-a6A" firstAttribute="leading" secondItem="FpO-0M-0fT" secondAttribute="trailing" constant="50" id="ygn-od-Hlw"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Zr8-YB-N1e"/>
@@ -95,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="-501"/>
+            <point key="canvasLocation" x="1260" y="-501.49925037481262"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -122,6 +105,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wo0-dL-bGr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UbZ-Jq-Nco">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NPV-3A-7PW">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -134,10 +138,13 @@
                     <tabBarItem key="tabBarItem" title="" image="004-user" selectedImage="004-user" id="cPa-gy-q4n">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="collectionView" destination="wo0-dL-bGr" id="0oR-6s-Ehl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="444"/>
+            <point key="canvasLocation" x="528.79999999999995" y="443.92803598200902"/>
         </scene>
         <!--Fourth View Controller-->
         <scene sceneID="Ku3-u5-3Sp">
