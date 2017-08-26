@@ -16,44 +16,44 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Exercise" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5x-7O-i1f">
-                        <rect key="frame" x="8" y="10" width="159" height="30"/>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Exercise" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5x-7O-i1f">
+                        <rect key="frame" x="8" y="10" width="217" height="30"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sets" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AlP-3P-G4x">
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sets" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AlP-3P-G4x">
                         <rect key="frame" x="8" y="50" width="75" height="30"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reps" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPh-a6-0dm">
+                        <rect key="frame" x="93" y="50" width="74" height="30"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="75" id="Fu3-U4-pIk"/>
+                            <constraint firstAttribute="width" constant="74" id="VSV-48-t3O"/>
                         </constraints>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Reps" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPh-a6-0dm">
-                        <rect key="frame" x="93" y="50" width="74" height="30"/>
-                        <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="PTp-uN-yWh">
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="PTp-uN-yWh">
                         <rect key="frame" x="222" y="73" width="119" height="31"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </slider>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Weight" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZf-8P-870">
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZf-8P-870">
                         <rect key="frame" x="8" y="90" width="97" height="30"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="97" id="Y0b-vG-MEe"/>
+                            <constraint firstAttribute="width" constant="97" id="GRz-gT-4Ga"/>
                         </constraints>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3s-v9-z1n">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3s-v9-z1n">
                         <rect key="frame" x="247" y="26" width="69" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,21 +62,21 @@
                 </subviews>
                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="d3s-v9-z1n" firstAttribute="centerX" secondItem="PTp-uN-yWh" secondAttribute="centerX" id="48H-fy-yXb"/>
-                    <constraint firstItem="AlP-3P-G4x" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="56P-gS-BWa"/>
-                    <constraint firstItem="RPh-a6-0dm" firstAttribute="top" secondItem="PTp-uN-yWh" secondAttribute="top" id="7Yx-rc-zNy"/>
-                    <constraint firstItem="X5x-7O-i1f" firstAttribute="trailing" secondItem="RPh-a6-0dm" secondAttribute="trailing" id="Csa-a7-hTP"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="PTp-uN-yWh" secondAttribute="trailing" constant="29" id="EUs-As-Fje"/>
-                    <constraint firstItem="AlP-3P-G4x" firstAttribute="top" secondItem="X5x-7O-i1f" secondAttribute="bottom" constant="10" id="Knl-sB-1zX"/>
-                    <constraint firstItem="AlP-3P-G4x" firstAttribute="leading" secondItem="MZf-8P-870" secondAttribute="leading" id="MMP-FD-jmf"/>
-                    <constraint firstItem="PTp-uN-yWh" firstAttribute="leading" secondItem="RPh-a6-0dm" secondAttribute="trailing" constant="56" id="SwX-OH-ifg"/>
-                    <constraint firstItem="X5x-7O-i1f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="W9I-hX-5MK"/>
-                    <constraint firstItem="X5x-7O-i1f" firstAttribute="bottom" secondItem="d3s-v9-z1n" secondAttribute="bottom" id="cKe-8K-rK9"/>
-                    <constraint firstItem="RPh-a6-0dm" firstAttribute="leading" secondItem="AlP-3P-G4x" secondAttribute="trailing" constant="10" id="eeM-E3-zSM"/>
-                    <constraint firstItem="d3s-v9-z1n" firstAttribute="leading" secondItem="X5x-7O-i1f" secondAttribute="trailing" constant="79" id="lqv-aS-tp5"/>
-                    <constraint firstItem="AlP-3P-G4x" firstAttribute="baseline" secondItem="RPh-a6-0dm" secondAttribute="baseline" id="qGv-i2-SH0"/>
-                    <constraint firstItem="MZf-8P-870" firstAttribute="top" secondItem="AlP-3P-G4x" secondAttribute="bottom" constant="10" id="riF-qj-jCA"/>
-                    <constraint firstItem="X5x-7O-i1f" firstAttribute="leading" secondItem="AlP-3P-G4x" secondAttribute="leading" id="xmb-x3-iaE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="d3s-v9-z1n" secondAttribute="trailing" constant="51" id="6V0-fg-9tY"/>
+                    <constraint firstItem="d3s-v9-z1n" firstAttribute="centerX" secondItem="PTp-uN-yWh" secondAttribute="centerX" id="6aX-gg-bFa"/>
+                    <constraint firstItem="AlP-3P-G4x" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8Lh-90-sNL"/>
+                    <constraint firstItem="d3s-v9-z1n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="18" id="C2g-Fb-odJ"/>
+                    <constraint firstItem="PTp-uN-yWh" firstAttribute="leading" secondItem="RPh-a6-0dm" secondAttribute="trailing" constant="57" id="Cnn-qe-EHJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PTp-uN-yWh" secondAttribute="trailing" constant="28" id="Ecs-Vr-VKt"/>
+                    <constraint firstItem="RPh-a6-0dm" firstAttribute="leading" secondItem="AlP-3P-G4x" secondAttribute="trailing" constant="10" id="PIE-76-gde"/>
+                    <constraint firstItem="X5x-7O-i1f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="QFm-FA-i4Q"/>
+                    <constraint firstItem="AlP-3P-G4x" firstAttribute="top" secondItem="X5x-7O-i1f" secondAttribute="bottom" constant="10" id="YH3-iD-USo"/>
+                    <constraint firstItem="MZf-8P-870" firstAttribute="top" secondItem="AlP-3P-G4x" secondAttribute="bottom" constant="10" id="huk-dn-scE"/>
+                    <constraint firstItem="AlP-3P-G4x" firstAttribute="leading" secondItem="MZf-8P-870" secondAttribute="leading" id="ktg-ve-Jtx"/>
+                    <constraint firstItem="PTp-uN-yWh" firstAttribute="top" secondItem="d3s-v9-z1n" secondAttribute="bottom" constant="26" id="kzE-bj-NCQ"/>
+                    <constraint firstItem="X5x-7O-i1f" firstAttribute="leading" secondItem="AlP-3P-G4x" secondAttribute="leading" id="usj-qQ-df6"/>
+                    <constraint firstItem="AlP-3P-G4x" firstAttribute="baseline" secondItem="RPh-a6-0dm" secondAttribute="baseline" id="wMT-nQ-Lh8"/>
+                    <constraint firstItem="d3s-v9-z1n" firstAttribute="leading" secondItem="X5x-7O-i1f" secondAttribute="trailing" constant="22" id="xmM-ej-dUm"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

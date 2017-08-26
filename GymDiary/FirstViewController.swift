@@ -9,34 +9,24 @@
 import UIKit
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-   
-    @IBOutlet weak var cardioButton: UIButton!
+    
     @IBOutlet weak var weightButton: UIButton!
-    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var cardioButton: UIButton!
     @IBOutlet weak var table: UITableView!
-    @IBAction func AddButtonTapped(_ sender: Any) {
-        self.addButton.isHidden = true
-        self.cardioButton.isHidden = false
-        self.weightButton.isHidden = false
-    }
     @IBAction func weightButtonTapped(_ sender: Any) {
         data.insert("weightCell", at: 0)
-        self.weightButton.isHidden = true
-        self.cardioButton.isHidden = true
-        self.addButton.isHidden = false
         addExercise()
+    }
+   
+    @IBAction func cardioButtonTapped(_ sender: Any) {
+        data.insert("cardioCell", at: 0)
+        addExercise()
+    }
+    @IBAction func saveWorkoutTapped(_ sender: Any) {
         
     }
     
-    @IBAction func cardioButtonTapped(_ sender: Any) {
-        data.insert("cardioCell", at: 0)
-        self.weightButton.isHidden = true
-        self.cardioButton.isHidden = true
-        self.addButton.isHidden = false
-        addExercise()
-        
-    }
+    
     var data:[String] = []
     var cardioCells = [cardioCell()]
     var weightCells = [weightCell()]
@@ -44,13 +34,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     var weightCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = DateFormatter.Style.short
-        dateFormatter.timeStyle = DateFormatter.Style.short
-        let currentDateAndTime = dateFormatter.string(from: NSDate() as Date)
-        self.title = currentDateAndTime
-        self.cardioButton.isHidden = true
-        self.weightButton.isHidden = true
         // Do any additional setup after loading the view, typically from a nib.
     }
 
