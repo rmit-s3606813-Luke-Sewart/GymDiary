@@ -101,7 +101,14 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         {
             return 130
         }
-
+        
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete
+        {
+            data.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
     }
     
     

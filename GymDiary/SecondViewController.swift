@@ -12,6 +12,9 @@ class CollectionViewController: UICollectionViewController {
 
     var array = [String]()
     
+    @IBAction func cellTapped(_ sender: Any) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
