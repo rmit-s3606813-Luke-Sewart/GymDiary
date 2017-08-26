@@ -53,8 +53,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nr-OW-zvL">
                                 <rect key="frame" x="224" y="611" width="70" height="68"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="4c8-Ak-tMC"/>
-                                    <constraint firstAttribute="width" constant="70" id="S5Q-uN-U0M"/>
+                                    <constraint firstAttribute="height" constant="68" id="Zwa-os-Vnk"/>
+                                    <constraint firstAttribute="width" constant="70" id="jok-Kk-qa2"/>
                                 </constraints>
                                 <state key="normal" image="dumbbell"/>
                                 <connections>
@@ -64,7 +64,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NvZ-6e-e5P">
                                 <rect key="frame" x="111" y="610" width="69" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="69" id="H6n-EL-mOZ"/>
+                                    <constraint firstAttribute="width" constant="69" id="9Y2-R2-typ"/>
                                 </constraints>
                                 <state key="normal" image="man-running"/>
                                 <connections>
@@ -74,16 +74,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.48627450979999998" green="0.81568627449999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="BD6-Dx-hGO" secondAttribute="trailing" id="2re-KU-GHY"/>
-                            <constraint firstItem="BD6-Dx-hGO" firstAttribute="top" secondItem="ac4-Dk-oGV" secondAttribute="top" id="Je0-yI-PNP"/>
-                            <constraint firstItem="BD6-Dx-hGO" firstAttribute="leading" secondItem="ac4-Dk-oGV" secondAttribute="leading" id="UOv-lP-3wy"/>
-                            <constraint firstItem="NvZ-6e-e5P" firstAttribute="baseline" secondItem="3Nr-OW-zvL" secondAttribute="baseline" id="Xc0-ye-cFj"/>
-                            <constraint firstItem="3Nr-OW-zvL" firstAttribute="leading" secondItem="NvZ-6e-e5P" secondAttribute="trailing" constant="44" id="Yco-Ab-fLo"/>
-                            <constraint firstItem="NvZ-6e-e5P" firstAttribute="leading" secondItem="ac4-Dk-oGV" secondAttribute="leadingMargin" constant="91" id="aKY-0k-38S"/>
-                            <constraint firstItem="3Nr-OW-zvL" firstAttribute="top" secondItem="BD6-Dx-hGO" secondAttribute="bottom" constant="8" symbolic="YES" id="bdl-go-zdl"/>
-                            <constraint firstItem="NvZ-6e-e5P" firstAttribute="firstBaseline" secondItem="3Nr-OW-zvL" secondAttribute="firstBaseline" id="g1C-kp-mbz"/>
-                            <constraint firstItem="NRq-PR-yy9" firstAttribute="top" secondItem="3Nr-OW-zvL" secondAttribute="bottom" constant="8" symbolic="YES" id="kwc-Qv-0ZG"/>
-                            <constraint firstItem="NvZ-6e-e5P" firstAttribute="top" secondItem="BD6-Dx-hGO" secondAttribute="bottom" constant="7" id="wyt-4D-wyQ"/>
+                            <constraint firstItem="BD6-Dx-hGO" firstAttribute="top" secondItem="ac4-Dk-oGV" secondAttribute="top" id="0zY-rp-nIj"/>
+                            <constraint firstItem="BD6-Dx-hGO" firstAttribute="leading" secondItem="ac4-Dk-oGV" secondAttribute="leading" id="7dT-a4-uPt"/>
+                            <constraint firstItem="3Nr-OW-zvL" firstAttribute="top" secondItem="BD6-Dx-hGO" secondAttribute="bottom" constant="8" symbolic="YES" id="IM2-4o-mWj"/>
+                            <constraint firstItem="NvZ-6e-e5P" firstAttribute="firstBaseline" secondItem="3Nr-OW-zvL" secondAttribute="firstBaseline" id="M5N-dZ-duc"/>
+                            <constraint firstItem="NvZ-6e-e5P" firstAttribute="leading" secondItem="ac4-Dk-oGV" secondAttribute="leadingMargin" constant="91" id="PGX-Tn-9Ns"/>
+                            <constraint firstItem="NvZ-6e-e5P" firstAttribute="top" secondItem="BD6-Dx-hGO" secondAttribute="bottom" constant="7" id="Pec-8C-BUI"/>
+                            <constraint firstItem="NRq-PR-yy9" firstAttribute="top" secondItem="3Nr-OW-zvL" secondAttribute="bottom" constant="8" symbolic="YES" id="R0X-GA-kgJ"/>
+                            <constraint firstAttribute="trailing" secondItem="BD6-Dx-hGO" secondAttribute="trailing" id="Rmg-v4-U70"/>
+                            <constraint firstItem="NvZ-6e-e5P" firstAttribute="baseline" secondItem="3Nr-OW-zvL" secondAttribute="baseline" id="VPk-Zd-ycT"/>
+                            <constraint firstItem="3Nr-OW-zvL" firstAttribute="leading" secondItem="NvZ-6e-e5P" secondAttribute="trailing" constant="44" id="jZS-oQ-fHI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Workout" id="Zhp-CJ-CAm">
@@ -125,7 +125,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLx-bI-5Bd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1483" y="425"/>
+            <point key="canvasLocation" x="2389.8550724637685" y="424.72826086956525"/>
         </scene>
         <!--Saved Workouts-->
         <scene sceneID="IwA-Sc-wEG">
@@ -144,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deD-mn-632" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270" y="425"/>
+            <point key="canvasLocation" x="3176.811594202899" y="424.72826086956525"/>
         </scene>
         <!--Stopwatch-->
         <scene sceneID="qrl-Ds-XE1">
@@ -196,7 +196,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="7Nc-9r-9hM" kind="relationship" relationship="viewControllers" id="cKX-6P-tYo"/>
-                        <segue destination="22G-58-o8i" kind="relationship" relationship="viewControllers" id="TJ5-NT-YkT"/>
+                        <segue destination="mrO-Oo-717" kind="relationship" relationship="viewControllers" id="N7U-5V-WoV"/>
                         <segue destination="617-b1-efW" kind="relationship" relationship="viewControllers" id="0ku-Ma-Wu8"/>
                         <segue destination="Fli-Wz-u56" kind="relationship" relationship="viewControllers" id="Z3g-2p-vud"/>
                     </connections>
@@ -205,67 +205,49 @@
             </objects>
             <point key="canvasLocation" x="-759" y="-6"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="dmH-g8-Npt">
-            <objects>
-                <navigationController id="22G-58-o8i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="weightlifter-silhouette-2" selectedImage="weightlifter-silhouette-2" id="5rh-ap-QLY">
-                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
-                    </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kbx-8r-zQx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="xLO-fh-Jkd" kind="relationship" relationship="rootViewController" id="GKn-tJ-8Gh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hHs-W0-Mfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="16" y="425"/>
-        </scene>
         <!--Recommended Exercises-->
         <scene sceneID="d5b-Of-eAS">
             <objects>
                 <collectionViewController id="xLO-fh-Jkd" customClass="CollectionViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="xLp-X2-1iz">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xLp-X2-1iz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sye-nk-BRo">
-                            <size key="itemSize" width="125" height="125"/>
+                            <size key="itemSize" width="137" height="137"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="VPo-X7-pNG">
-                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="VPo-X7-pNG">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSp-Z3-kRh">
-                                            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                        <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSp-Z3-kRh">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                             <color key="tintColor" red="0.48627450979999998" green="0.81568627449999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </state>
                                             <connections>
                                                 <action selector="cellTapped:" destination="xLO-fh-Jkd" eventType="touchUpInside" id="1iK-Zo-6rd"/>
+                                                <segue destination="vFc-UJ-fRD" kind="show" id="yh8-WY-BUv"/>
                                             </connections>
                                         </button>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" red="0.48627450979999998" green="0.81568627449999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="RSp-Z3-kRh" firstAttribute="top" secondItem="VPo-X7-pNG" secondAttribute="top" id="Lol-lv-ejE"/>
-                                    <constraint firstItem="RSp-Z3-kRh" firstAttribute="leading" secondItem="VPo-X7-pNG" secondAttribute="leading" id="cNi-Ku-EIh"/>
-                                    <constraint firstAttribute="trailing" secondItem="RSp-Z3-kRh" secondAttribute="trailing" id="iOx-Ew-A6V"/>
-                                    <constraint firstAttribute="bottom" secondItem="RSp-Z3-kRh" secondAttribute="bottom" id="uz7-Ct-ZZ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="RSp-Z3-kRh" secondAttribute="trailing" id="H5d-1n-SSe"/>
+                                    <constraint firstItem="RSp-Z3-kRh" firstAttribute="top" secondItem="VPo-X7-pNG" secondAttribute="top" id="R4x-R5-T4f"/>
+                                    <constraint firstAttribute="bottom" secondItem="RSp-Z3-kRh" secondAttribute="bottom" id="ZPo-Wc-HUS"/>
+                                    <constraint firstItem="RSp-Z3-kRh" firstAttribute="leading" secondItem="VPo-X7-pNG" secondAttribute="leading" id="gCZ-IX-xvx"/>
                                 </constraints>
-                                <edgeInsets key="layoutMargins" top="8" left="5" bottom="8" right="8"/>
+                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                <size key="customSize" width="80" height="80"/>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -278,13 +260,128 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exo-FU-1f5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727.536231884058" y="424.72826086956525"/>
+            <point key="canvasLocation" x="727.20000000000005" y="447.52623688155927"/>
+        </scene>
+        <!--Bicep Curl-->
+        <scene sceneID="xPE-ac-kaN">
+            <objects>
+                <viewController id="vFc-UJ-fRD" customClass="DetailViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YM0-wk-3Lt"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZpQ-5w-2Vn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Zs-gp-G7q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hammer_cheat_curl_main" translatesAutoresizingMaskIntoConstraints="NO" id="r0T-ly-Y6k">
+                                <rect key="frame" x="0.0" y="72" width="200" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ZfG-l4-EB6"/>
+                                    <constraint firstAttribute="height" constant="168" id="wwH-8D-6H2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Targeted Muscle Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="55E-SK-4Ep">
+                                <rect key="frame" x="193" y="80" width="221" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="UhB-PJ-jUE"/>
+                                    <constraint firstAttribute="height" constant="46" id="gHL-B0-B8Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cXa-LD-gQM">
+                                <rect key="frame" x="33" y="583" width="336" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Vrj-YZ-SCs"/>
+                                </constraints>
+                                <string key="text">Stand up straight with a dumbbell in each hand at arm's length. Keep your elbows close to your torso and rotate the palm of your hands until they are facing forward. This will be your starting position. Now, keeping the upper arms stationary, exhale and curl the weights while contracting your biceps.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" How To Perform..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iY9-1r-HDt">
+                                <rect key="frame" x="20" y="262" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biceps" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gwc-hH-dgv">
+                                <rect key="frame" x="193" y="134" width="60" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Biceps"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="JyQ-jc-tW3"/>
+                                    <constraint firstAttribute="width" constant="60" id="oM1-Ra-4RF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aEG-bh-wWz">
+                                <rect key="frame" x="20" y="304" width="374" height="246"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Stand up straight with a dumbbell in each hand at arm's length. Keep your elbows close to your torso and rotate the palms of your hands until they are facing forward. This will be your starting position. Now, keeping the upper arms stationary, exhale and curl the weights while contracting your biceps.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cXa-LD-gQM" firstAttribute="top" secondItem="ZpQ-5w-2Vn" secondAttribute="bottom" constant="-104" id="4Ll-wd-CNO"/>
+                            <constraint firstItem="iY9-1r-HDt" firstAttribute="leading" secondItem="8Zs-gp-G7q" secondAttribute="leadingMargin" id="9rU-XY-ASd"/>
+                            <constraint firstItem="aEG-bh-wWz" firstAttribute="top" secondItem="iY9-1r-HDt" secondAttribute="bottom" constant="21" id="AYt-1f-Hpv"/>
+                            <constraint firstItem="cXa-LD-gQM" firstAttribute="top" secondItem="aEG-bh-wWz" secondAttribute="bottom" constant="33" id="AwM-Mm-lV6"/>
+                            <constraint firstItem="iY9-1r-HDt" firstAttribute="top" secondItem="r0T-ly-Y6k" secondAttribute="bottom" constant="22" id="C4A-dQ-KWc"/>
+                            <constraint firstItem="r0T-ly-Y6k" firstAttribute="leading" secondItem="8Zs-gp-G7q" secondAttribute="leading" id="PtA-a6-8V2"/>
+                            <constraint firstItem="55E-SK-4Ep" firstAttribute="top" secondItem="YM0-wk-3Lt" secondAttribute="bottom" constant="16" id="XjK-BD-PsP"/>
+                            <constraint firstItem="aEG-bh-wWz" firstAttribute="trailing" secondItem="8Zs-gp-G7q" secondAttribute="trailingMargin" id="ecc-wy-rRy"/>
+                            <constraint firstAttribute="trailing" secondItem="55E-SK-4Ep" secondAttribute="trailing" id="gdD-Ar-Lmi"/>
+                            <constraint firstItem="r0T-ly-Y6k" firstAttribute="top" secondItem="YM0-wk-3Lt" secondAttribute="bottom" constant="8" symbolic="YES" id="h18-fF-o71"/>
+                            <constraint firstItem="cXa-LD-gQM" firstAttribute="leading" secondItem="8Zs-gp-G7q" secondAttribute="leadingMargin" constant="13" id="vhU-36-uRk"/>
+                            <constraint firstItem="iY9-1r-HDt" firstAttribute="leading" secondItem="aEG-bh-wWz" secondAttribute="leading" id="voC-id-GXc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cXa-LD-gQM" secondAttribute="trailing" constant="25" id="zAL-hg-FLW"/>
+                            <constraint firstItem="55E-SK-4Ep" firstAttribute="leading" secondItem="Gwc-hH-dgv" secondAttribute="leading" id="zbI-DU-Wsi"/>
+                            <constraint firstItem="Gwc-hH-dgv" firstAttribute="top" secondItem="55E-SK-4Ep" secondAttribute="bottom" constant="8" symbolic="YES" id="ztx-5k-bdo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bicep Curl" id="DCd-ua-DfR"/>
+                    <connections>
+                        <outlet property="Label1" destination="Gwc-hH-dgv" id="j5m-lh-vu4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rkr-63-pvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727.536231884058" y="1170.6521739130435"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QdT-Xq-6lH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mrO-Oo-717" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="weightlifter-silhouette-2" selectedImage="weightlifter-silhouette-2" id="1oY-Yb-fmr">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="VYT-aA-l96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dRf-IK-naL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xLO-fh-Jkd" kind="relationship" relationship="rootViewController" id="41A-HC-6ce"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMI-en-V6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="448"/>
         </scene>
     </scenes>
     <resources>
         <image name="002-open-book" width="44" height="44"/>
         <image name="003-clock" width="44" height="44"/>
         <image name="dumbbell" width="64" height="64"/>
+        <image name="hammer_cheat_curl_main" width="1188" height="1028"/>
         <image name="man-running" width="64" height="64"/>
         <image name="plus" width="44" height="44"/>
         <image name="weightlifter-silhouette-2" width="44" height="44"/>

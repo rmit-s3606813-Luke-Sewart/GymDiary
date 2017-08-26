@@ -34,6 +34,33 @@ class CollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as UICollectionViewCell
         let Button = cell.viewWithTag(1) as! UIButton
         Button.setTitle(array[indexPath.row], for: UIControlState.normal)
+        if indexPath.row % 5 == 1
+        {
+            cell.backgroundColor = UIColor(red: 124/255, green: 255/255, blue: 154/255, alpha: 1)
+            
+        }
+        else if indexPath.row % 5 == 2
+        {
+            cell.backgroundColor = UIColor(red: 232/255, green: 225/255, blue: 134/255, alpha: 1)
+            
+        }
+        else if indexPath.row % 5 == 3
+        {
+            cell.backgroundColor = UIColor(red: 255/255, green: 142/255, blue: 55/255, alpha: 1)
+            
+        }
+        else if indexPath.row % 5 == 4
+        {
+            cell.backgroundColor = UIColor(red: 124/255, green: 62/255, blue: 182/255, alpha: 1)
+            
+        }
+        else
+        {
+            cell.backgroundColor = UIColor(red: 124/255, green: 129/255, blue: 255/255, alpha: 1)
+        }
+
+        
+        
         return cell
     }
 }
