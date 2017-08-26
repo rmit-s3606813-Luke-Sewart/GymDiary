@@ -29,8 +29,8 @@ class CollectionViewController: UICollectionViewController {
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as UICollectionViewCell
-        let Label = cell.viewWithTag(1) as! UILabel
-        Label.text = array[indexPath.row]
+        let Button = cell.viewWithTag(1) as! UIButton
+        Button.setTitle(array[indexPath.row], for: UIControlState.normal)
         return cell
     }
 }
