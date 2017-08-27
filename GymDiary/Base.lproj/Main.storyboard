@@ -149,7 +149,7 @@
         <!--Stopwatch-->
         <scene sceneID="qrl-Ds-XE1">
             <objects>
-                <viewController id="eLp-yW-tVQ" sceneMemberID="viewController">
+                <viewController id="eLp-yW-tVQ" customClass="ThirdViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yrD-4u-k4E"/>
                         <viewControllerLayoutGuide type="bottom" id="P4s-bu-tOJ"/>
@@ -157,13 +157,52 @@
                     <view key="view" contentMode="scaleToFill" id="EX3-eY-6NW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVG-Va-cz8">
+                                <rect key="frame" x="129" y="124" width="157" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGf-c7-14J">
+                                <rect key="frame" x="307" y="256" width="51" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="stopWatchResetButton:" destination="eLp-yW-tVQ" eventType="touchUpInside" id="w0h-Da-d2C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91p-Yh-Tvg">
+                                <rect key="frame" x="50" y="256" width="43" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="stopWatchToggleTouchUpInside:" destination="eLp-yW-tVQ" eventType="touchUpInside" id="lkX-Ti-ZDA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wGf-c7-14J" firstAttribute="leading" secondItem="91p-Yh-Tvg" secondAttribute="trailing" constant="214" id="8Rx-1H-Sbm"/>
+                            <constraint firstItem="gVG-Va-cz8" firstAttribute="leading" secondItem="EX3-eY-6NW" secondAttribute="leadingMargin" constant="109" id="BW9-GY-rT5"/>
+                            <constraint firstItem="91p-Yh-Tvg" firstAttribute="top" secondItem="yrD-4u-k4E" secondAttribute="bottom" constant="192" id="BkW-iu-QQq"/>
+                            <constraint firstItem="wGf-c7-14J" firstAttribute="top" secondItem="yrD-4u-k4E" secondAttribute="bottom" constant="192" id="Ewy-2z-KP4"/>
+                            <constraint firstItem="wGf-c7-14J" firstAttribute="leading" secondItem="91p-Yh-Tvg" secondAttribute="trailing" constant="214" id="SpK-Sn-D41"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wGf-c7-14J" secondAttribute="trailing" constant="36" id="bgo-5D-5ef"/>
+                            <constraint firstItem="91p-Yh-Tvg" firstAttribute="leading" secondItem="EX3-eY-6NW" secondAttribute="leadingMargin" constant="30" id="lvy-11-elf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gVG-Va-cz8" secondAttribute="trailing" constant="108" id="qAz-zU-TSE"/>
+                            <constraint firstItem="gVG-Va-cz8" firstAttribute="top" secondItem="yrD-4u-k4E" secondAttribute="bottom" constant="60" id="wNn-FY-hH8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Stopwatch" id="3c5-Wg-h19"/>
+                    <connections>
+                        <outlet property="stopWatchDisplay" destination="gVG-Va-cz8" id="83d-Ri-OtU"/>
+                        <outlet property="stopWatchToggleButton" destination="91p-Yh-Tvg" id="6Zg-pQ-ITt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AK0-d9-JhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2271" y="-532"/>
+            <point key="canvasLocation" x="2269.5652173913045" y="-532.33695652173913"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7AY-D1-hNn">
