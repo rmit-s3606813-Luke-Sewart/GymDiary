@@ -19,6 +19,7 @@ class CollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         array = ["Bicep Curl","Tricep Pulldown","Leg Press","Push Up","Lat Pulldown","Chest Press","Sit Up","Chest Fly","Shoulder Press","DeadLlift","Leg Curl","Pull Up"]
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -58,8 +59,6 @@ class CollectionViewController: UICollectionViewController {
         {
             cell.backgroundColor = UIColor(red: 124/255, green: 129/255, blue: 255/255, alpha: 1)
         }
-
-        
         
         return cell
     }

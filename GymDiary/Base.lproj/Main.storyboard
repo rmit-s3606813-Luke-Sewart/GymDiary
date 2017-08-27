@@ -220,14 +220,14 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="VPo-X7-pNG">
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="cell" id="VPo-X7-pNG">
                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSp-Z3-kRh">
+                                        <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RSp-Z3-kRh">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                             <color key="tintColor" red="0.48627450979999998" green="0.81568627449999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal">
@@ -241,12 +241,12 @@
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="RSp-Z3-kRh" secondAttribute="trailing" id="H5d-1n-SSe"/>
-                                    <constraint firstItem="RSp-Z3-kRh" firstAttribute="top" secondItem="VPo-X7-pNG" secondAttribute="top" id="R4x-R5-T4f"/>
-                                    <constraint firstAttribute="bottom" secondItem="RSp-Z3-kRh" secondAttribute="bottom" id="ZPo-Wc-HUS"/>
-                                    <constraint firstItem="RSp-Z3-kRh" firstAttribute="leading" secondItem="VPo-X7-pNG" secondAttribute="leading" id="gCZ-IX-xvx"/>
+                                    <constraint firstItem="RSp-Z3-kRh" firstAttribute="top" secondItem="VPo-X7-pNG" secondAttribute="top" id="2Wo-OQ-bL1"/>
+                                    <constraint firstAttribute="trailing" secondItem="RSp-Z3-kRh" secondAttribute="trailing" id="GTw-VH-37J"/>
+                                    <constraint firstItem="RSp-Z3-kRh" firstAttribute="leading" secondItem="VPo-X7-pNG" secondAttribute="leading" id="ZZN-VM-ZwG"/>
+                                    <constraint firstAttribute="bottom" secondItem="RSp-Z3-kRh" secondAttribute="bottom" id="o6C-ci-UlP"/>
                                 </constraints>
-                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                <edgeInsets key="layoutMargins" top="5" left="5" bottom="5" right="5"/>
                                 <size key="customSize" width="80" height="80"/>
                             </collectionViewCell>
                         </cells>
@@ -260,7 +260,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exo-FU-1f5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727.20000000000005" y="447.52623688155927"/>
+            <point key="canvasLocation" x="726.08695652173924" y="446.73913043478262"/>
         </scene>
         <!--Bicep Curl-->
         <scene sceneID="xPE-ac-kaN">
