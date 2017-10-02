@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidLoad() {
         

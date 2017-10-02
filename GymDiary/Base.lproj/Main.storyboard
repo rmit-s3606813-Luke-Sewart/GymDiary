@@ -33,7 +33,7 @@
         <!--Add Workout-->
         <scene sceneID="AJs-Ma-bdP">
             <objects>
-                <viewController id="SPr-Al-ly4" customClass="FirstViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SPr-Al-ly4" customClass="AddWorkoutViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TU0-nc-6hn"/>
                         <viewControllerLayoutGuide type="bottom" id="NRq-PR-yy9"/>
@@ -125,7 +125,7 @@
         <!--Saved Workouts-->
         <scene sceneID="IwA-Sc-wEG">
             <objects>
-                <viewController id="FTk-ki-q6P" customClass="FourthViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FTk-ki-q6P" customClass="SavedWorkoutViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oat-yv-eBd"/>
                         <viewControllerLayoutGuide type="bottom" id="KQr-00-bWD"/>
@@ -166,17 +166,17 @@
                                         <rect key="frame" x="312" y="8" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlt-9a-jI0">
-                                        <rect key="frame" x="8" y="64" width="156" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMV-zu-C8h">
                                         <rect key="frame" x="8" y="8" width="179" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlt-9a-jI0">
+                                        <rect key="frame" x="8" y="58" width="156" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -202,7 +202,7 @@
         <!--Workout Detail View Controller-->
         <scene sceneID="7gd-7t-ULi">
             <objects>
-                <viewController storyboardIdentifier="WorkoutDetailViewController" id="htW-QZ-TLy" customClass="workoutDetailViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WorkoutDetailViewController" id="htW-QZ-TLy" customClass="WorkoutDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="37V-sD-PgW"/>
                         <viewControllerLayoutGuide type="bottom" id="Km0-fC-Mg4"/>
@@ -227,12 +227,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ma6-P2-tY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4164" y="448"/>
+            <point key="canvasLocation" x="2311" y="1276"/>
         </scene>
         <!--Stopwatch-->
         <scene sceneID="qrl-Ds-XE1">
             <objects>
-                <viewController id="eLp-yW-tVQ" customClass="ThirdViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eLp-yW-tVQ" customClass="StopwatchViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yrD-4u-k4E"/>
                         <viewControllerLayoutGuide type="bottom" id="P4s-bu-tOJ"/>
@@ -349,26 +349,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RSp-Z3-kRh">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quL-WI-kQU">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                            <accessibility key="accessibilityConfiguration" identifier="collectionCell"/>
-                                            <color key="tintColor" red="0.48627450979999998" green="0.81568627449999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <state key="normal">
-                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="cellTapped:" destination="xLO-fh-Jkd" eventType="touchUpInside" id="1iK-Zo-6rd"/>
-                                                <segue destination="vFc-UJ-fRD" kind="show" id="yh8-WY-BUv"/>
-                                            </connections>
-                                        </button>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstItem="RSp-Z3-kRh" firstAttribute="top" secondItem="VPo-X7-pNG" secondAttribute="top" id="2Wo-OQ-bL1"/>
-                                    <constraint firstAttribute="trailing" secondItem="RSp-Z3-kRh" secondAttribute="trailing" id="GTw-VH-37J"/>
-                                    <constraint firstItem="RSp-Z3-kRh" firstAttribute="leading" secondItem="VPo-X7-pNG" secondAttribute="leading" id="ZZN-VM-ZwG"/>
-                                    <constraint firstAttribute="bottom" secondItem="RSp-Z3-kRh" secondAttribute="bottom" id="o6C-ci-UlP"/>
-                                </constraints>
                                 <edgeInsets key="layoutMargins" top="5" left="5" bottom="5" right="5"/>
                                 <size key="customSize" width="80" height="80"/>
                             </collectionViewCell>
@@ -380,6 +369,9 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Recommended Exercises" id="uW1-bO-p5r"/>
                     <value key="contentSizeForViewInPopover" type="size" width="375" height="667"/>
+                    <connections>
+                        <outlet property="collectionView" destination="xLp-X2-1iz" id="Jk4-5u-AiE"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exo-FU-1f5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -388,7 +380,7 @@
         <!--Bicep Curl-->
         <scene sceneID="xPE-ac-kaN">
             <objects>
-                <viewController id="vFc-UJ-fRD" customClass="DetailViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExerciseTutorial" id="vFc-UJ-fRD" customClass="ExerciseTutorialViewController" customModule="GymDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YM0-wk-3Lt"/>
                         <viewControllerLayoutGuide type="bottom" id="ZpQ-5w-2Vn"/>
@@ -397,85 +389,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hammer_cheat_curl_main" translatesAutoresizingMaskIntoConstraints="NO" id="r0T-ly-Y6k">
-                                <rect key="frame" x="0.0" y="72" width="200" height="168"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="ZfG-l4-EB6"/>
-                                    <constraint firstAttribute="height" constant="168" id="wwH-8D-6H2"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Targeted Muscle Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="55E-SK-4Ep">
-                                <rect key="frame" x="193" y="80" width="221" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="221" id="UhB-PJ-jUE"/>
-                                    <constraint firstAttribute="height" constant="46" id="gHL-B0-B8Y"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cXa-LD-gQM">
-                                <rect key="frame" x="33" y="583" width="336" height="0.0"/>
+                                <rect key="frame" x="33" y="632" width="336" height="0.0"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" id="Vrj-YZ-SCs"/>
+                                    <constraint firstAttribute="height" id="Cgg-f7-3Ha"/>
                                 </constraints>
                                 <string key="text">Stand up straight with a dumbbell in each hand at arm's length. Keep your elbows close to your torso and rotate the palm of your hands until they are facing forward. This will be your starting position. Now, keeping the upper arms stationary, exhale and curl the weights while contracting your biceps.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" How To Perform..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iY9-1r-HDt">
-                                <rect key="frame" x="20" y="262" width="142" height="21"/>
+                                <rect key="frame" x="20" y="218" width="142" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="vS2-LM-vbg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biceps" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gwc-hH-dgv">
-                                <rect key="frame" x="193" y="134" width="60" height="32"/>
+                                <rect key="frame" x="193" y="90" width="60" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="Biceps"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="JyQ-jc-tW3"/>
-                                    <constraint firstAttribute="width" constant="60" id="oM1-Ra-4RF"/>
+                                    <constraint firstAttribute="height" constant="32" id="Jp7-Kz-CNI"/>
+                                    <constraint firstAttribute="width" constant="60" id="kpk-Ho-SqS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aEG-bh-wWz">
-                                <rect key="frame" x="20" y="304" width="374" height="246"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eSZ-n5-Hjn">
+                                <rect key="frame" x="11" y="36" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="jFc-jH-dkz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Targeted Muscle Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="55E-SK-4Ep">
+                                <rect key="frame" x="193" y="36" width="221" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Ude-NO-BC5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUy-yT-j2b">
+                                <rect key="frame" x="20" y="247" width="374" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Stand up straight with a dumbbell in each hand at arm's length. Keep your elbows close to your torso and rotate the palms of your hands until they are facing forward. This will be your starting position. Now, keeping the upper arms stationary, exhale and curl the weights while contracting your biceps.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cXa-LD-gQM" firstAttribute="top" secondItem="ZpQ-5w-2Vn" secondAttribute="bottom" constant="-104" id="4Ll-wd-CNO"/>
-                            <constraint firstItem="iY9-1r-HDt" firstAttribute="leading" secondItem="8Zs-gp-G7q" secondAttribute="leadingMargin" id="9rU-XY-ASd"/>
-                            <constraint firstItem="aEG-bh-wWz" firstAttribute="top" secondItem="iY9-1r-HDt" secondAttribute="bottom" constant="21" id="AYt-1f-Hpv"/>
-                            <constraint firstItem="cXa-LD-gQM" firstAttribute="top" secondItem="aEG-bh-wWz" secondAttribute="bottom" constant="33" id="AwM-Mm-lV6"/>
-                            <constraint firstItem="iY9-1r-HDt" firstAttribute="top" secondItem="r0T-ly-Y6k" secondAttribute="bottom" constant="22" id="C4A-dQ-KWc"/>
-                            <constraint firstItem="r0T-ly-Y6k" firstAttribute="leading" secondItem="8Zs-gp-G7q" secondAttribute="leading" id="PtA-a6-8V2"/>
-                            <constraint firstItem="55E-SK-4Ep" firstAttribute="top" secondItem="YM0-wk-3Lt" secondAttribute="bottom" constant="16" id="XjK-BD-PsP"/>
-                            <constraint firstItem="aEG-bh-wWz" firstAttribute="trailing" secondItem="8Zs-gp-G7q" secondAttribute="trailingMargin" id="ecc-wy-rRy"/>
-                            <constraint firstAttribute="trailing" secondItem="55E-SK-4Ep" secondAttribute="trailing" id="gdD-Ar-Lmi"/>
-                            <constraint firstItem="r0T-ly-Y6k" firstAttribute="top" secondItem="YM0-wk-3Lt" secondAttribute="bottom" constant="8" symbolic="YES" id="h18-fF-o71"/>
-                            <constraint firstItem="cXa-LD-gQM" firstAttribute="leading" secondItem="8Zs-gp-G7q" secondAttribute="leadingMargin" constant="13" id="vhU-36-uRk"/>
-                            <constraint firstItem="iY9-1r-HDt" firstAttribute="leading" secondItem="aEG-bh-wWz" secondAttribute="leading" id="voC-id-GXc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cXa-LD-gQM" secondAttribute="trailing" constant="25" id="zAL-hg-FLW"/>
-                            <constraint firstItem="55E-SK-4Ep" firstAttribute="leading" secondItem="Gwc-hH-dgv" secondAttribute="leading" id="zbI-DU-Wsi"/>
-                            <constraint firstItem="Gwc-hH-dgv" firstAttribute="top" secondItem="55E-SK-4Ep" secondAttribute="bottom" constant="8" symbolic="YES" id="ztx-5k-bdo"/>
+                            <constraint firstItem="eSZ-n5-Hjn" firstAttribute="leading" secondItem="8Zs-gp-G7q" secondAttribute="leadingMargin" constant="-9" id="1xo-kq-Co7"/>
+                            <constraint firstItem="cXa-LD-gQM" firstAttribute="top" secondItem="ZpQ-5w-2Vn" secondAttribute="bottom" constant="-104" id="CHs-W1-lyu"/>
+                            <constraint firstItem="eSZ-n5-Hjn" firstAttribute="top" secondItem="YM0-wk-3Lt" secondAttribute="bottom" constant="16" id="J46-wd-1zK"/>
+                            <constraint firstItem="Gwc-hH-dgv" firstAttribute="top" secondItem="55E-SK-4Ep" secondAttribute="bottom" constant="8" symbolic="YES" id="Px0-Ig-XzX"/>
+                            <constraint firstItem="eSZ-n5-Hjn" firstAttribute="top" secondItem="55E-SK-4Ep" secondAttribute="top" id="Yp3-gK-Ce1"/>
+                            <constraint firstItem="55E-SK-4Ep" firstAttribute="leading" secondItem="Gwc-hH-dgv" secondAttribute="leading" id="fPm-0h-Sar"/>
+                            <constraint firstItem="iY9-1r-HDt" firstAttribute="top" secondItem="eSZ-n5-Hjn" secondAttribute="bottom" constant="22" id="fxi-7P-Thb"/>
+                            <constraint firstItem="55E-SK-4Ep" firstAttribute="leading" secondItem="eSZ-n5-Hjn" secondAttribute="trailing" constant="22" id="gof-bY-B5k"/>
+                            <constraint firstItem="cXa-LD-gQM" firstAttribute="leading" secondItem="8Zs-gp-G7q" secondAttribute="leadingMargin" constant="13" id="jQa-gt-VCC"/>
+                            <constraint firstAttribute="trailing" secondItem="55E-SK-4Ep" secondAttribute="trailing" id="qyK-0K-bLR"/>
+                            <constraint firstItem="eSZ-n5-Hjn" firstAttribute="centerX" secondItem="iY9-1r-HDt" secondAttribute="centerX" id="r2V-Sa-gdb"/>
+                            <constraint firstItem="iY9-1r-HDt" firstAttribute="leading" secondItem="8Zs-gp-G7q" secondAttribute="leadingMargin" id="v4r-N8-eC6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cXa-LD-gQM" secondAttribute="trailing" constant="25" id="xf8-SQ-nJW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Bicep Curl" id="DCd-ua-DfR"/>
                     <connections>
-                        <outlet property="Label1" destination="Gwc-hH-dgv" id="j5m-lh-vu4"/>
+                        <outlet property="descriptionLabel" destination="UUy-yT-j2b" id="MWt-KG-3lW"/>
+                        <outlet property="image" destination="eSZ-n5-Hjn" id="dLU-hM-eUj"/>
+                        <outlet property="targetedMusclesLabel" destination="Gwc-hH-dgv" id="QOm-EN-iJs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkr-63-pvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727.536231884058" y="1170.6521739130435"/>
+            <point key="canvasLocation" x="724.63768115942037" y="1275.8152173913045"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QdT-Xq-6lH">
@@ -504,7 +498,6 @@
         <image name="002-open-book" width="44" height="44"/>
         <image name="003-clock" width="44" height="44"/>
         <image name="dumbbell" width="64" height="64"/>
-        <image name="hammer_cheat_curl_main" width="1188" height="1028"/>
         <image name="man-running" width="64" height="64"/>
         <image name="plus" width="44" height="44"/>
         <image name="weightlifter-silhouette-2" width="44" height="44"/>

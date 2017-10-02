@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import CoreLocation
 
-class FourthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
+class SavedWorkoutViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var degreesTextLabel: UILabel!
@@ -29,19 +29,15 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        print(coordinate)
         locManager.delegate = self
         locManager.requestAlwaysAuthorization()
         locManager.requestWhenInUseAuthorization()
+        locManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         if(CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedWhenInUse ||
         CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedAlways)
         {
             coordinate.lat = (locManager.location?.coordinate.latitude)!
-            print(coordinate.lat)
-            print(coordinate.long)
             coordinate.long = (locManager.location?.coordinate.longitude)!
-            print(locManager.location?.coordinate.longitude as Any)
-            print(coordinate.long)
         }
         forecast = Forecast(APIKey: forecastAPIKey)
         forecast.getCurrentWeather(latitude: coordinate.lat, longitude: coordinate.long)

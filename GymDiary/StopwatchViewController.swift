@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class StopwatchViewController: UIViewController {
     
     var timer: Timer?
     var currentTime = 0
