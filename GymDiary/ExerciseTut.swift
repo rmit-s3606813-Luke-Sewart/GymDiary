@@ -14,12 +14,14 @@ class ExerciseTut
     let targetedMuscles: String
     let description: String
     let imageName: String
+    let vidURL: String
     
-    init(name: String, targetedMuscles: String, description: String, imageName: String)
+    init(name: String, targetedMuscles: String, description: String, imageName: String, vidURL: String)
     {
         self.name = name
         self.targetedMuscles = targetedMuscles
         self.description = description
         self.imageName = imageName
+        self.vidURL = vidURL
     }
 }

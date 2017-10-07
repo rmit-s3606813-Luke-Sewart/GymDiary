@@ -14,6 +14,8 @@
 		750172F51F4286EE00023862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750172F31F4286EE00023862 /* Main.storyboard */; };
 		750172F71F4286EE00023862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750172F61F4286EE00023862 /* Assets.xcassets */; };
 		750172FA1F4286EE00023862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750172F81F4286EE00023862 /* LaunchScreen.storyboard */; };
+		B3974D7D1F88B2E600D7E34D /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3974D7C1F88B2E600D7E34D /* AVKit.framework */; };
+		B3974D811F88E05B00D7E34D /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3974D801F88E05B00D7E34D /* global.swift */; };
 		B7053B511F78F948003DBE50 /* Weight+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7053B491F78F948003DBE50 /* Weight+CoreDataClass.swift */; };
 		B7053B521F78F948003DBE50 /* Weight+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7053B4A1F78F948003DBE50 /* Weight+CoreDataProperties.swift */; };
 		B7053B531F78F948003DBE50 /* Workout+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7053B4B1F78F948003DBE50 /* Workout+CoreDataClass.swift */; };
@@ -52,6 +54,8 @@
 		750172F61F4286EE00023862 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750172F91F4286EE00023862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750172FB1F4286EE00023862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3974D7C1F88B2E600D7E34D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		B3974D801F88E05B00D7E34D /* global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
 		B7053B491F78F948003DBE50 /* Weight+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Weight+CoreDataClass.swift"; path = "GymDiary/Weight+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B7053B4A1F78F948003DBE50 /* Weight+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Weight+CoreDataProperties.swift"; path = "GymDiary/Weight+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B7053B4B1F78F948003DBE50 /* Workout+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Workout+CoreDataClass.swift"; path = "GymDiary/Workout+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3974D7D1F88B2E600D7E34D /* AVKit.framework in Frameworks */,
 				B71254441F7608380071D2AA /* CoreData.framework in Frameworks */,
 				0C899E9464E99E1B95B26C27 /* Pods_GymDiary.framework in Frameworks */,
 			);
@@ -100,6 +105,7 @@
 		4D0A0A77F7CCF8C39294FB56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3974D7C1F88B2E600D7E34D /* AVKit.framework */,
 				DB650D0C196EEB0ED390B622 /* Pods_GymDiary.framework */,
 			);
 			name = Frameworks;
@@ -130,6 +136,7 @@
 				B71254421F7608380071D2AA /* CoreData */,
 				B71254481F7627260071D2AA /* ViewController */,
 				750172ED1F4286EE00023862 /* AppDelegate.swift */,
+				B3974D801F88E05B00D7E34D /* global.swift */,
 				750172F31F4286EE00023862 /* Main.storyboard */,
 				750172F61F4286EE00023862 /* Assets.xcassets */,
 				750172F81F4286EE00023862 /* LaunchScreen.storyboard */,
@@ -359,6 +366,7 @@
 				B7053B511F78F948003DBE50 /* Weight+CoreDataClass.swift in Sources */,
 				750172EE1F4286EE00023862 /* AppDelegate.swift in Sources */,
 				B757D0861F77E294003F2DA9 /* WorkoutDetailViewController.swift in Sources */,
+				B3974D811F88E05B00D7E34D /* global.swift in Sources */,
 				B78CEE691F48D11C00D311B4 /* StopwatchViewController.swift in Sources */,
 				B7DF252F1F71158D0025E587 /* weightComplete.swift in Sources */,
 				750172F01F4286EE00023862 /* AddWorkoutViewController.swift in Sources */,

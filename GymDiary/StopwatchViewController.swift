@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  StopwatchViewController.swift
 //  GymDiary
 //
 //  Created by Jordan Tori on 19/8/17.
@@ -8,34 +8,19 @@
 
 import UIKit
 
-class StopwatchViewController: UIViewController {
+class StopwatchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var timer: Timer?
-    var currentTime = 0
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var stopWatchDisplay: UILabel!
-    @IBOutlet weak var stopWatchToggleButton: UIButton!
-    @IBAction func stopWatchResetButton(_ sender: Any){
-        stopWatchDisplay.text = "00:00"
-        currentTime = 0
-    }
-    @IBAction func stopWatchToggleTouchUpInside(_ sender: Any) {
-        if timer != nil {
-            stopWatchToggleButton.setTitle("Start", for: .normal)
-            timer?.invalidate()
-            timer = nil
-        } else {
-            stopWatchToggleButton.setTitle("Stop", for: .normal)
-            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
-                self.currentTime += 1
-                let minutesPortion = String(format: "%02d", self.currentTime / 60 )
-                let secondsPortion = String(format: "%02d", self.currentTime % 60 )
-                self.stopWatchDisplay.text = "\(minutesPortion):\(secondsPortion)"
-            }
-        }
-    }
+    var totalSec: Float = 0
+    var timer = Timer()
+    var lapTimeArray = [String]()
+    var timerRunning: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        timerLabel.text = "00:00:00"
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -44,9 +29,48 @@ class StopwatchViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func returnNumber()->Int {
-        return 5;
+    @IBAction func startButtonTapped(_ sender: AnyObject) {
+        if timerRunning == false {
+            timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
+            timerRunning = true
+        }
     }
+    
+    @IBAction func stopButtonTapped(_ sender: AnyObject) {
+        timer.invalidate()
+        timerRunning = false
+        lapTimeArray.removeAll()
+        totalSec = 0
+    }
+    
+    @IBAction func lapButtonTapped(_ sender: AnyObject) {
+        lapTimeArray.append(timerLabel.text!)
+        tableView.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "lapRecordCell")
+        cell?.textLabel?.text = lapTimeArray[indexPath.row]
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return lapTimeArray.count
+    }
+    
+    func updateTimer(){
+        totalSec += 0.01
+        let totalSecMulti100:Int = Int(totalSec*100)
+        let min = Int(totalSec/60)
+        let hour = Int(min/60)
+        let minStr = (min == 0) ? "00" : "\(min)"
+        let hourStr = (hour == 0) ? "00" : "\(hour)"
+        let secStr = (totalSec < 9) ? "0\(Float(totalSecMulti100)/100)" : "\(Float(totalSecMulti100)/100)"
+        timerLabel.text = "\(hourStr):\(minStr):\(secStr)"
+    }
+    
+    
+    
     
 }
 

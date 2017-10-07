@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 
+import AVFoundation
+import AVKit
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
